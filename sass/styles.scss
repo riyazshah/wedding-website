@@ -41,7 +41,7 @@ body {
   font-weight: $light;
   color: $txt-primary;
   -webkit-text-size-adjust: 100%;
-  background-color: rgb(31, 51, 12);
+  background-color: $bg-color;
 }
 *:focus {
   outline: none !important;
@@ -294,7 +294,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgb(31, 51, 12);
+  background-color: $bg-color;
   z-index: 999;
   width: 100%;
 }
@@ -601,7 +601,7 @@ Features-stack
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgb(31, 51, 12);
+      background-color: $bg-color;
       -moz-transition: all 300ms ease-in-out;
       -o-transition: all 300ms ease-in-out;
       -webkit-transition: all 300ms ease-in-out;
@@ -903,5 +903,5 @@ body.modal-open {
 
 // sections
 .sections {
-  background-color: rgb(31, 51, 12);
+  background-color: $bg-color;
 }

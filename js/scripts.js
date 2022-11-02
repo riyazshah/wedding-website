@@ -1,4 +1,21 @@
 $(document).ready(function () {
+    const wedding = new Date('06/24/2023');
+	const today = new Date();
+	const days = Math.ceil((wedding - today) / 86400000);
+	let copy;
+	if (days > 1) {
+        copy = `${days} days to go!`;
+	} else if (days === 1) {
+		copy = 'Tomorrow is the big day!';
+	} else if (days === 0) {
+		copy = 'Today is the big day!';
+	}
+
+	if (copy) {
+		document.getElementById('countdown').innerHTML = copy;
+	}
+
+
 
     /***************** Waypoints ******************/
 
