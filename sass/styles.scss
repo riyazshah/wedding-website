@@ -54,7 +54,7 @@ ul li {
   list-style: none;
 }
 section .header {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .section-padding {
   padding: $section-padding;
@@ -904,4 +904,37 @@ body.modal-open {
 // sections
 .sections {
   background-color: $bg-color;
+}
+
+/* ==========================================================================
+Added by me
+========================================================================== */
+
+/* ==========================================================================
+Wedding Info
+========================================================================== */
+@media screen and (max-width: 500px) {
+  .schedule-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    .event {
+      padding: 15px;
+      width: 200px
+    }
+  }
+  
+}
+@media screen and (min-width: 500px) {
+  .schedule-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .event {
+      padding: 10px;
+    }
+  }
 }
