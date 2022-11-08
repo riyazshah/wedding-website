@@ -678,11 +678,7 @@ body.modal-open {
 /* ==========================================================================
 Added by me
 ========================================================================== */
-
-/* ==========================================================================
-Wedding Info
-========================================================================== */
-.schedule-container {
+.module-container {
   display: flex;
   @media screen and (max-width: 500px) {
     flex-direction: column;
@@ -693,29 +689,31 @@ Wedding Info
   justify-content: center;
   align-items: center;
 
-  .event {
+  .module {
+
     padding: 15px;
     width: 200px
   }
 }
 
-
 /* ==========================================================================
-Day Hikes
+Map
 ========================================================================== */
-.day-hike-container {
-  display: flex;
+.rec-map {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0px;
   @media screen and (max-width: 500px) {
-    flex-direction: column;
+    width: 95%;
+    height: 400px;
   }
   @media screen and (min-width: 500px) {
-    flex-direction: row;
+    width: 60%;
+    height: 400px;
   }
-  justify-content: center;
-  align-items: center;
+}
 
-  .day-hike {
-    padding: 15px;
-    width: 200px;
-  }
+.section-break {
+  width: 90%;
+  opacity: 50%;
 }
