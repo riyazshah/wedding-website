@@ -50,9 +50,6 @@ ul, ol {
   margin: 0;
   padding: 0;
 }
-ul li {
-  list-style: none;
-}
 .section-padding {
   padding: $section-padding;
 }
@@ -696,10 +693,19 @@ Added by me
   align-items: center;
 
   .module {
-    min-height: 110px;
     padding: 15px;
-    width: 200px
+    @media screen and (max-width: 500px) {
+      width: 90%;
+      padding-bottom: 0px;
+    }
+    @media screen and (min-width: 500px) {
+      flex: 1 1 0px;
+    }
   }
+}
+
+.wedding-info-module {
+  min-height: 170px;
 }
 
 /* ==========================================================================
@@ -723,6 +729,12 @@ Map
   width: 90%;
   opacity: 50%;
 }
+
+
+/* ==========================================================================
+Hikes
+========================================================================== */
+
 .hike-info {
   padding-bottom: 5px;
 }
@@ -731,4 +743,21 @@ Map
   
   height: auto;
   padding-bottom: 5px;
+}
+
+
+/* ==========================================================================
+Getting There
+========================================================================== */
+.getting-there-info {
+  @media screen and (max-width: 500px) {
+    width: 90%;
+    display: inline-block;
+    padding-left: 2%;
+  }
+  @media screen and (min-width: 500px) {
+    width: 45%;
+    padding-left: 5%;
+  }
+  text-align: left;
 }
