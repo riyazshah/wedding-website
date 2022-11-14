@@ -53,9 +53,6 @@ ul, ol {
 ul li {
   list-style: none;
 }
-section .header {
-  padding-bottom: 15px;
-}
 .section-padding {
   padding: $section-padding;
 }
@@ -678,6 +675,15 @@ body.modal-open {
 /* ==========================================================================
 Added by me
 ========================================================================== */
+.welcome-info {
+  width: 100%;
+}
+
+.welcome-info-text {
+  width: 800px;
+  display: inline-block;
+}
+
 .module-container {
   display: flex;
   @media screen and (max-width: 500px) {
@@ -716,4 +722,13 @@ Map
 .section-break {
   width: 90%;
   opacity: 50%;
+}
+.hike-info {
+  padding-bottom: 5px;
+}
+.hike-image {
+  width: 100%;
+  
+  height: auto;
+  padding-bottom: 5px;
 }
