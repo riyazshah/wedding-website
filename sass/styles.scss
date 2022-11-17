@@ -750,6 +750,21 @@ Hikes
   object-fit: cover;
   padding-bottom: 5px;
 }
+#hike-image-rtlsnk {
+  display: inline-block;
+  position: relative;
+}
+#hike-image-rtlsnk-alt {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+#hike-image-rtlsnk-alt:hover {
+  display: inline;
+}
+
 
 /* ==========================================================================
 MultiDay
