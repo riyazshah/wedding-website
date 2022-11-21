@@ -1,9 +1,12 @@
 // Colours partial
 
+$white-color: #fff;
+$black-color: #000;
+$orange-color: #CE8523;
 // Text colours
-$txt-primary: #CE8523;
+$txt-primary: $white-color;
 // body font
-$txt-secondary: #3D4351;
+$txt-secondary: white;
 // heading font
 $txt-light: #fff;
 // header/hero
@@ -15,13 +18,11 @@ $accent-color: #e8ca6f;
 // global accent colour
 $accent-color-hover: #d3b56a;
 // global accent colour hover
-$white-color: #fff;
-$black-color: #000;
 // Typography colours
-$h2-color: #EBE5DB;
-$h3-color: #EBE5DB;
-$h4-color: #EBE5DB;
-$h5-color: #fff;
+$h2-color: $white-color;
+$h3-color: $orange-color;
+$h4-color: $white-color;
+$h5-color: $white-color;
 // Layout colours
 $section-light: #fff;
 $section-dark: #f8f9fd;
