@@ -174,7 +174,6 @@ Waypoinsts
 /* ==========================================================================
 Navigation
 ========================================================================== */
-
 .header-nav.open {
   visibility: visible;
   opacity: 0.9;
@@ -239,9 +238,9 @@ Navigation
 }
 .navicon {
   position: absolute;
-  height: 26px;
+  height: 25px;
   right: 10px;
-  top: 48px;
+  top: 25px;
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
@@ -252,24 +251,30 @@ Hero
 .hero-container {
   width: 100%;
 }
-.hero {
-  background: url('../img/hero-min.jpg') center center;
+.hero-mobile {
   @media screen and (min-width: 500px){
-      min-height: 750px;
-      background-size: cover;
-      background-repeat: no-repeat;
+    display: none;
   }
   @media screen and (max-width: 500px){
-    min-height: 500px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: inline-block;
   }
+}
+.hero {
+  @media screen and (min-width: 500px){
+      min-height: 750px;
+      margin-bottom: 15px;
+  }
+  @media screen and (max-width: 500px){
+    min-height: 400px;
+    margin-bottom: 0px;
+  }
+  background: url('../img/hero-min.jpg') center center;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  margin-bottom: 15px;
 
   .down-arrow a {
     color: $txt-light;
@@ -296,6 +301,9 @@ Hero
       margin-left: 5%;
       text-align: left;
     }
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
     // @media screen and (max-width: 500px){
     // }
   }
@@ -309,16 +317,18 @@ Hero
   position: fixed;
   width: 100%;
   z-index: 999;
+  background-color: #354739;
+  max-height: 80px;
 }
 .fixed {
   position: fixed;
   background-color: $bg-color;
   z-index: 999;
   width: 100%;
+  max-height: 80px;
 }
 header {
   padding: 50px 0;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   position: relative;
   width: 1170px;
   margin: 0 auto;
