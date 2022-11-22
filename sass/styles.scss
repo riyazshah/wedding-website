@@ -252,12 +252,17 @@ Hero
   width: 100%;
 }
 .hero-mobile {
+  text-align: center;
+  width: 100%;
   @media screen and (min-width: 500px){
     display: none;
   }
   @media screen and (max-width: 500px){
     display: inline-block;
   }
+}
+.hero-countdown-mobile h2 {
+  font-size: 25px;
 }
 .hero {
   @media screen and (min-width: 500px){
@@ -281,8 +286,6 @@ Hero
   }
   h1 {
     color: $txt-light;
-    margin-bottom: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   p.intro {
     color: $txt-light;
