@@ -307,8 +307,6 @@ Hero
     @media screen and (max-width: 500px) {
       display: none;
     }
-    // @media screen and (max-width: 500px){
-    // }
   }
   .hero-content img {
     width: 55%;
@@ -667,7 +665,7 @@ footer {
     font-size: 30px;
     display: block;
     cursor: pointer;
-    margin: -25px auto 50px;
+    margin: -25px auto 20px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -717,6 +715,7 @@ Added by me
 .welcome-info-text {
   width: 80%;
   display: inline-block;
+  padding-bottom: 15px;
 }
 
 .module-container {
@@ -818,6 +817,7 @@ Getting There
 ========================================================================== */
 .getting-there-module-container {
   display: flex;
+  padding-top: 15px;
   @media screen and (max-width: 500px) {
     flex-direction: column;
   }
@@ -828,14 +828,14 @@ Getting There
   align-items: center;
 
   .getting-there-module {
-    padding: 0px 15px 15px 0px;
+    padding: 15px 15px 15px 0px;
     @media screen and (max-width: 500px) {
       width: 90%;
       padding-bottom: 0px;
     }
     @media screen and (min-width: 500px) {
       flex: 1 1 0px;
-      min-height: 115px;
+      min-height: 130px;
     }
   }
 }
@@ -859,5 +859,15 @@ Getting There
   @media screen and (min-width: 500px) {
     width: 50%;
     padding-left: 5%;
+  }
+}
+    
+footer {
+  @media screen and (max-width: 500px) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: 500px) {
+    padding-top: 15px;
   }
 }
