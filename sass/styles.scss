@@ -722,17 +722,22 @@ Added by me
   display: flex;
   @media screen and (max-width: 500px) {
     flex-direction: column;
+    align-items: center;
   }
   @media screen and (min-width: 500px) {
     flex-direction: row;
   }
   justify-content: center;
-  align-items: center;
+
+  .module.mday-module {
+    @media screen and (min-width: 500px) {
+      padding-top: 0px;
+    }
+  }
 
   .module {
     padding: 15px;
     @media screen and (max-width: 500px) {
-      width: 90%;
       padding-bottom: 0px;
     }
     @media screen and (min-width: 500px) {
@@ -773,6 +778,11 @@ Map
 /* ==========================================================================
 Hikes
 ========================================================================== */
+.module.hike {
+  @media screen and (max-width: 500px) {
+    min-width: 90%;
+  }
+}
 
 .hike-info {
   padding-bottom: 5px;
@@ -815,7 +825,12 @@ MultiDay
 /* ==========================================================================
 Accomodations
 ========================================================================== */
-.accommodations-list {
+.accommodations-list-neighborhoods {
+  padding-left: 25px;
+  padding-top: 15px;
+  text-align: left;
+}
+.accommodations-list-hotels {
   padding-left: 45px;
   padding-top: 15px;
   text-align: left;
@@ -826,21 +841,22 @@ Getting There
 ========================================================================== */
 .getting-there-module-container {
   display: flex;
+  justify-content: center;
   padding-top: 15px;
   @media screen and (max-width: 500px) {
     flex-direction: column;
+    align-items: center;
   }
   @media screen and (min-width: 500px) {
     flex-direction: row;
   }
-  justify-content: center;
-  align-items: center;
 
   .getting-there-module {
     padding: 15px 15px 15px 0px;
     @media screen and (max-width: 500px) {
       width: 90%;
       padding-bottom: 0px;
+      padding-top: 0px; 
     }
     @media screen and (min-width: 500px) {
       flex: 1 1 0px;
